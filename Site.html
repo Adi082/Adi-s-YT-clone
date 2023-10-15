@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Adi's YT-clone </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+
+    
+    <style>
+      p {font-family: arial;}
+      .menu-icon{ width: 1.5vw;height: 3vw; margin-left: 2vh; margin-top: 0px;}
+      .yt-icon {width: 7vw; margin-left: 10px; margin-top: 10px;vertical-align: top;}
+      .yt-icon:hover, .in:hover { opacity: 60%;cursor: pointer;}
+      .Ad-button:hover {background-color: lightpink; cursor: pointer;}
+
+      .mm2:hover, .a-links2:hover, .menu-icon:hover, .s2-button:hover, .side-more:hover, .ad-video:hover, 
+      .mix-video:hover, .gen-video:hover, .search-icon:hover, .mic-icon:hover, .s-buttons:hover 
+         { opacity: 60%; cursor: pointer;}
+      .p-subs{
+        margin-left: 15px;
+        margin-bottom: 0px; margin-top: 30px;
+      }
+      .yt-text {
+        font-size: 2vw;
+        font-family: 'Roboto', sans-serif; font-weight: 400;
+        margin-left: 0.1vw; margin-top: 0px;
+      }
+      .in{font-size: 1vw; font-family: arial; margin-top: 8px; margin-left: 5px;}
+      .menu-2-icon {
+        width: 35%; margin-left: 2vh;
+      }
+      .a-links {
+        width: 100%;
+        margin-left: 0.4vw;
+        color: white;
+        background-color: black;
+        border-radius: 1vh;
+        border-width: 0px;
+        font-size: 1vw;
+        text-align: left; vertical-align: middle;
+        white-space: nowrap;
+      }
+      .sub-icon{
+        width: 50%; border-radius: 1.5vw;margin-left: 10px; margin-top: 10px; vertical-align: top;
+      }
+      .a-links2{
+        margin-top: 10px; background-color: transparent;
+        color: white; border: 0px; margin-left: 0px;
+        text-align: left;
+      }
+      .search-box{
+        width: 40%;height: 2vw; vertical-align: top; 
+        margin-top: 10px; margin-left: 20vw; 
+        border-top-left-radius: 1.5vw; border-bottom-left-radius: 1.5vw; 
+        margin-right: 0px; padding-left: 10px;
+      }
+      .search-icon{
+        width: 2%; background-color: rgb(59, 59, 59);
+        margin-top: 10px; margin-left: 0px; 
+        border-bottom-right-radius: 1vw; border-top-right-radius: 1vw;
+        padding-top: 0.3vw; padding-bottom: 0.3vw;
+        padding-right: 0.6vw; padding-left: 0.6vw;
+      }
+      .mic-icon{
+        width: 2%; background-color: rgb(59, 59, 59);
+        margin-top: 10px; margin-left: 1.5vw; margin-right: 12vw;
+        padding-top: 0.3vw; padding-bottom: 0.3vw;
+        padding-right: 0.3vw; padding-left: 0.3vw; border-radius: 1.5vw;
+      }
+      .s-buttons{
+        width: 2%; border-radius: 1.2vw; margin-right: 1vw;
+        vertical-align: top; margin-top: 12px;
+      }
+      .video-div{ margin-left: 10px;}
+      .s2-button{ 
+        margin-left: 10px; margin-top: 10px;
+        background-color: rgb(60, 60, 60); color: white; 
+        border-radius: 6px; border: 0px;
+        padding-left: 6px;padding-right: 6px;padding-top: 3px;padding-bottom: 3px;
+      }
+      .side-more{
+        width: 2%; margin-top: 10px;vertical-align: top; margin-left: 1vw;
+      }
+      .vid-thumbs{
+        width: 100%;margin-top: 20px;
+      }
+      .ch-icon{
+        width: 100%;margin-top: 10px;border-radius: 1.5vw;
+      }
+      .v-title{
+        width: 100%; font-size: 100%;
+        display: inline-block;margin-left: 10px;
+        vertical-align: top;margin-top: 10px;
+        margin-bottom: 0px; color: white;
+        
+      }
+      .ch-dets{
+        margin-top: 15px;margin-left: 10px;
+        font-size: 10%;font-weight: bold;color: white; text-decoration: none;
+      }
+      .ch-num{
+        margin-top: 5px; font-size: 10%; margin-left: 10px; color: white;text-decoration: none;
+      }
+      .Ad-button{
+        width: 90%;margin-top: 20px;
+      }
+      .mix-video{
+        margin-left: 20px;
+        
+      }
+      .vid-comp{ 
+        margin-top: 20px; vertical-align: top;}
+      .gen-video{
+        margin-left: 20px; 
+      }
+    </style>
+  </head>
+
+
+  <body>
+    <div style="display: grid; grid-template-columns: 1fr 6fr; 
+      background-color: black; color: white;">
+
+      <div class="menu-div">
+        <div class="menu-1" style="display: grid; 
+          grid-template-columns: 1fr 1fr 2fr 0.3fr;
+          margin-top: 15px;">
+          <img class="menu-icon" src="YT-img/Menu-icons/Menu-line.png">
+          <a href="https://www.youtube.com" target="_blank"><img class="yt-icon" src="YT-img/Menu-icons/YT-text.png"></a>
+          <a class="in"> IN </a>
+        </div> <!-- class="menu-div" -->
+
+        <div class="menu-2">
+          <div class="mm2" style="display: grid; grid-template-columns: 1fr 3fr;
+            margin-top: 25px;">
+            <img class="menu-2-icon" src="YT-img/Menu-icons/homepage.png">
+            <form action="https://www.youtube.com">
+              <button class="a-links"> Home </button></form>
+          </div>
+          <div class="mm2" style="display: grid; grid-template-columns: 1fr 3fr;
+            margin-top: 10px;">
+            <img class="menu-2-icon" src="YT-img/Menu-icons/yt_shorts.png">
+            <button class="a-links"> Shorts </button>
+          </div>
+          <div class="mm2" style="display: grid; grid-template-columns: 1fr 3fr;
+            margin-top: 8px;">
+            <img class="menu-2-icon" src="YT-img/Menu-icons/yt_subs.png">
+            <button class="a-links"> Subscriptions </button>
+          </div>
+        </div> <!-- class="menu-2" -->
+        
+
+        <div class="menu-3">
+          <div class="mm2" style="display: grid; grid-template-columns: 1fr 3fr;
+            margin-top: 25px;">
+            <img class="menu-2-icon" src="YT-img/Menu-icons/yt_library.png">
+            <button class="a-links"> Library </button>
+          </div>
+          <div class="mm2" style="display: grid; grid-template-columns: 1fr 3fr;
+            margin-top: 10px;">
+            <img class="menu-2-icon" src="YT-img/Menu-icons/yt_history.png">
+            <button class="a-links"> History </button>
+          </div>
+          <div class="mm2" style="display: grid; grid-template-columns: 1fr 3fr;
+            margin-top: 8px;">
+            <img class="menu-2-icon" src="YT-img/Menu-icons/your_videos.png">
+            <button class="a-links"> Your Videos </button>
+          </div>
+          <div class="mm2" style="display: grid; grid-template-columns: 1fr 3fr;
+            margin-top: 10px;">
+            <img class="menu-2-icon" src="YT-img/Menu-icons/watch_later.png">
+            <button class="a-links"> Watch Later </button>
+          </div>
+          <div class="mm2" style="display: grid; grid-template-columns: 1fr 3fr;
+            margin-top: 10px;">
+            <img class="menu-2-icon" src="YT-img/Menu-icons/yt_playlists.png">
+            <button class="a-links"> Arijit Singh </button>
+          </div>
+          <div class="mm2" style="display: grid; grid-template-columns: 1fr 3fr;
+            margin-top: 10px;">
+            <img class="menu-2-icon" src="YT-img/Menu-icons/more-icon.png">
+            <button class="a-links"> Show More </button>
+          </div>
+        </div> <!-- class="menu-3" -->
+
+
+        <div class="menu-4">
+          <p class="p-subs">Subscriptions</p>
+          <div style="display: grid; grid-template-columns: 1fr 3fr;
+            margin-top: 15px;">
+            <img class="sub-icon" src="YT-img/Ch-icon/Gen-1.jpg">
+            <button class="a-links2"> Zee Music Co. </button>
+
+            <img class="sub-icon" src="YT-img/Ch-icon/Gen-3.jpg">
+            <button class="a-links2"> Arijit Singh Official </button>
+
+            <img class="sub-icon" src="YT-img/Ch-icon/Gen-4.jpg">
+            <button class="a-links2"> Jasleen Royal </button>
+
+            <img class="sub-icon" src="YT-img/Ch-icon/Gen-5.jpg">
+            <button class="a-links2"> T-Series </button>
+
+            <img class="sub-icon" src="YT-img/Menu-icons/more-icon.png">
+            <button class="a-links2"> Show More </button>
+          </div>
+          
+        </div>  <!-- class="menu-4" -->
+        
+      </div> <!-- class="menu-div" -->
+
+      <div class="video-div">
+        <div class="vid-search">
+          <input class="search-box" type="text" placeholder="search">
+          <img class="search-icon" src="YT-img/Menu-icons/search-icon.png">
+          <img class="mic-icon" src="YT-img/Menu-icons/Mic-icon.png">
+          <img class="s-buttons" src="YT-img/Menu-icons/upload_video.png">
+          <img class="s-buttons" src="YT-img/Menu-icons/bell_icon.png">
+          <img class="s-buttons" src="YT-img/Menu-icons/channel-icon.jpg">
+
+          <button class="s2-button">All</button>
+          <button class="s2-button">Mixes</button>
+          <button class="s2-button">Music</button>
+          <button class="s2-button">Arijit Singh</button>
+          <button class="s2-button">T-series</button>
+          <button class="s2-button">Zee Music</button>
+          <button class="s2-button">Eminem</button>
+          <button class="s2-button">Selena Gomez</button>
+          <button class="s2-button">Akshay Kumar</button>
+          <button class="s2-button">Street food</button>
+          <button class="s2-button">Ranveer Brar</button>
+          <img class="side-more" src="YT-img/Menu-icons/side-more.png"
+        </div> <!-- class="vid-search"-->
+
+
+        <div class="vid-comp" style="display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 40px; column-gap: 10px; margin-right: 15px;">
+
+          <a href="https://www.youtube.com/@Adi_977" target="_blank"><div class="ad-video">
+            <img class="vid-thumbs" 
+              src="YT-img/Vid-thumbs/Ad-vid.png">
+
+            <div class="Ch-details" style="display: grid;
+              grid-template-columns: 1fr 8fr;">
+                <img class="ch-icon" 
+                src="YT-img/Ch-icon/Ad-logo.jpg">
+
+                <div>
+                  <p class="v-title">
+                    Automobile Engineering to QA Automation Testing
+                  </p>
+                  <p class="ch-dets">
+                    Sponsored &#8226 Salesforce with Adi
+                  </p>
+                  <button class="Ad-button">
+                    Learn More &#8594;
+                  </button>
+                </div>
+
+            </div>
+
+          </div></a> <!--Ad-Video-->
+
+          
+          <a href="https://www.youtube.com/watch?v=YT8rY_o5VhY&list=RDMMYT8rY_o5VhY&start_radio=1" target="_blank">
+          <div class="mix-video">
+            <img class="vid-thumbs" 
+              src="YT-img/Vid-thumbs/Mix-vid.jpg">
+              
+            <div class="Ch-details">
+
+                  <p class="v-title">
+                    My Mix
+                  </p>
+                  <p class="ch-dets">
+                    Hanshraj Raghuwanshi, Jonita Gandhi, Arijit Singh, and more
+                  </p>
+
+             </div>
+          </div></a> <!--Mix-Video-->
+
+
+          <a href="https://www.youtube.com/watch?v=vdbP_3o73qI&pp=ygULamFhbiBuaXNhYXI%3D" target="_blank">
+          <div class="gen-video">
+            <img class="vid-thumbs" 
+              src="YT-img/Vid-thumbs/Gen-1.jpg">
+
+            <div class="Ch-details" style="display: grid;
+              grid-template-columns: 1fr 8fr;">
+                <img class="ch-icon" 
+                src="YT-img/Ch-icon/Gen-1.jpg">
+
+                <div>
+                  <p class="v-title">
+                    Jaan Nisaar - Lyrical | Kedarnath| Arijit Singh | Sushant Singh Rajput | Sara Ali Khan| Amit Trivedi
+                  </p>
+                  <p class="ch-dets">
+                    Zee Music Company 
+                  </p>
+                  <p class="ch-num">
+                    190M views &#8226 3 years ago
+                  </p>
+                </div>
+
+            </div>
+          </div> </a>            <!--Gen-Video-->
+
+          <a href="https://www.youtube.com/watch?v=BsqrmY91nUQ&pp=ygUJZGlsIGpob29t" target="_blank">
+            <div class="gen-video">      <!--Gen-Video-->
+            <img class="vid-thumbs" 
+            src="YT-img/Vid-thumbs/Gen-2.jpg">
+
+          <div class="Ch-details" style="display: grid;
+            grid-template-columns: 1fr 8fr;">
+              <img class="ch-icon" 
+              src="YT-img/Ch-icon/Gen-2.jpg">
+
+              <div>
+                <p class="v-title">
+                  Dil Jhoom | Gadar 2 | Arijit Singh | Sunny Deol, Utkarsh Sharma, Simratt K
+                </p>
+                <p class="ch-dets">
+                  Zee Music Company 
+                </p>
+                <p class="ch-num">
+                  55M views &#8226 2 months ago
+                </p>
+              </div>
+
+          </div>
+          </div></a> <!--Gen-Video-->
+
+          <a href="https://www.youtube.com/watch?v=Qdv2YG9nOsY&pp=ygUZYmVzdCBvZiBhcmlqaXQgc2luZ2ggMjAyMw%3D%3D" 
+           target="_blank"><div class="gen-video">      <!--Gen-Video-->
+            <img class="vid-thumbs" 
+            src="YT-img/Vid-thumbs/Gen-3.jpg">
+
+          <div class="Ch-details" style="display: grid;
+            grid-template-columns: 1fr 8fr;">
+              <img class="ch-icon" 
+              src="YT-img/Ch-icon/Gen-3.jpg">
+
+              <div>
+                <p class="v-title">
+                  Best of Arijit Singh 2023 | Arijit Singh Hindi Romantic Songs 2023 | Arijit Singh Hits Songs
+                </p>
+                <p class="ch-dets">
+                   Arijit Singh Official
+                </p>
+                <p class="ch-num">
+                  2.5M views &#8226 4 months ago
+                </p>
+              </div>
+
+          </div>
+          </div> </a> <!--Gen-Video-->
+
+          <a href="https://www.youtube.com/watch?v=RLzC55ai0eo&pp=ygUZYmVzdCBvZiBhcmlqaXQgc2luZ2ggMjAyMw%3D%3D" 
+           target="_blank"> <div class="gen-video">
+            <img class="vid-thumbs" 
+            src="YT-img/Vid-thumbs/Gen-4.jpg">
+
+          <div class="Ch-details" style="display: grid;
+            grid-template-columns: 1fr 8fr;">
+              <img class="ch-icon" 
+              src="YT-img/Ch-icon/Gen-4.jpg">
+
+              <div>
+                <p class="v-title">
+                  Heeriye (Official Video) Jasleen Royal ft Arijit Singh| Dulquer Salmaan| Aditya Sharma |Taani Tanvir
+                </p>
+                <p class="ch-dets">
+                  Jasleen Royal 
+                </p>
+                <p class="ch-num">
+                  165M views &#8226 2 months ago
+                </p>
+              </div> 
+
+          </div>
+          </div></a> <!--Gen-Video-->
+
+          <a href="https://www.youtube.com/watch?v=VAdGW7QDJiU&pp=ygUHY2hhbGV5YQ%3D%3D" 
+           target="_blank"> <div class="gen-video">
+            <img class="vid-thumbs" 
+            src="YT-img/Vid-thumbs/Gen-5.jpg">
+
+          <div class="Ch-details" style="display: grid;
+            grid-template-columns: 1fr 8fr;">
+              <img class="ch-icon" 
+              src="YT-img/Ch-icon/Gen-5.jpg">
+
+              <div>
+                <p class="v-title">
+                  JAWAN: Chaleya (Hindi) | Shah Rukh Khan | Nayanthara | Atlee | Anirudh | Arijit S, Shilpa R | Kumaar
+                </p>
+                <p class="ch-dets">
+                  T-Series
+                </p>
+                <p class="ch-num">
+                  149M views &#8226 2 months ago
+                </p>
+              </div>
+
+          </div>
+          </div> </a> <!--Gen-Video-->
+
+          <div class="gen-video"></div> <!--Gen-Video-->
+
+        </div> <!-- class="vid-comp"-->
+        
+        
+      </div> <!-- class="video-div"-->
+
+
+    </div> <!-- Final Div-->
+  </body>
+</html>
